@@ -21,6 +21,8 @@ function cal_gallery(){
 		$type="gallery";
 	}elseif(is_post_type_archive('merch')){
 		$type="merch";
+	}else if(is_post_type_archive('crew')){
+		$type="crew";
 	}
 	//additional query object to get up to 5 slides
 	$gallery_query = new WP_Query(array(
